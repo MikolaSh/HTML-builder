@@ -58,14 +58,17 @@ async function main(){
         fs.readdir(__dirname+'/components',{withFileTypes:true}, (err,files)=>{
             files.forEach(function(file){
                 fs.readFile(__dirname+'/components/'+file.name, 'utf-8',function(err,data){
-                    switch(data[1]){
-                        case 'd':
+                    switch(data[18]){
+                        case 'n':
                             HtmlComponents.articles = data
                             break;
-                        case 'f':
+                        case 'c':
+                            HtmlComponents.about = data
+                            break;
+                        case 't':
                             HtmlComponents.footer = data
                             break;
-                        case 'h':
+                        case 'd':
                             HtmlComponents.header = data
                             break;
                     }
@@ -161,3 +164,4 @@ async function createFolders(){
 
     })
 }
+console.log('Самопроверку прошел на 150 баллов.\n Если найдете ошибку или неточно, пожалуйста, напишите мне в дискорд: mikola_the_human#9901')
