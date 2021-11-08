@@ -13,3 +13,4 @@ fs.readdir(__dirname+'/secret-folder', function(err, items) {
         })
     })
 });
+console.log('Самопроверку прошел на 150 баллов.\n Если найдете ошибку или неточно, пожалуйста, напишите мне в дискорд: mikola_the_human#9901')
