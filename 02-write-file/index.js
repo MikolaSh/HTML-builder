@@ -12,7 +12,7 @@ rl.on('line',function(input){
         rl.close();
         return;
     }
-    writeStream.write(input);
+    writeStream.write(input+'\n');
 })
 
 rl.on('close', function(){
